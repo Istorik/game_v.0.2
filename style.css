@@ -1,0 +1,343 @@
+/* https://itchief.ru/lessons/html-and-css/meta-viewport-how-it-works */
+
+body {
+  font-family:"Times New Roman";
+  background: #f0f0f0;
+  float: center;
+#  width: 100%;
+#  box-sizing: border-box;
+}
+
+html, body, .container { box-sizing: border-box; }
+
+p {
+    text-align: justify;
+    font-family:"Arial";
+}
+
+h1 {
+  font-family:"Times New Roman";
+  text-align: center;
+  }
+
+input[type=text] {
+#    width: 100%;
+    background-color: #3CBC8D;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 31px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size:1.7em;
+}
+
+div.all {
+    width: 720px;
+#    border: 4px double black; /* Параметры границы */
+    padding: 25px 0px 0px; /* Поля вокруг текста */
+    margin: auto;
+#    text-align: left;
+    font-size: 18px;
+}
+
+div.all h2 {
+  font-family:"Times New Roman";
+  text-align: center;
+}
+
+div.who {
+  height: 25px;
+  width: 102%;
+  position: relative;
+  left: -1%;
+  margin: -8px 0 0 -8px;
+  background: url(/pics/lenty.jpg);
+}
+
+header {
+  display: block; /* Для старых браузеров */
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  text-align: center; /* Выравнивание по центру */
+  color: #fff;
+  vertical-align: baseline;
+}
+
+div.start_form {
+    width: 100%;
+#    border: 4px double black; /* Параметры границы */
+    padding: 0px; /* Поля вокруг текста */
+    margin: auto;
+    text-align: right;
+}
+
+div.start_form1 {
+    width: 100%;
+#    border: 4px double black; /* Параметры границы */
+    padding: 0px; /* Поля вокруг текста */
+    margin: auto;
+    text-align: center;
+}
+
+
+div.body_start {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.class_start {
+    width: 50px;
+}
+
+div.ulika_all {
+  width: 100%;
+#  border: 4px double black;
+}
+
+div.ulika_img {
+  width: 200px; /* Ширина блока */
+  height: 276px; /* Высота блока */
+  float: left; /* Обтекание по правому краю */
+  overflow-y: hidden; /*Отображается только область внутри элемента, остальное будет скрыто.*/
+  padding-top: 0px; /* Поле сверху */
+  border: 0px solid #000; /* Параметры рамки */
+}
+
+div.ulika_info {
+    padding: 5px;
+#    background-color:#ccc;
+    float: right; /* Обтекание по левому краю */
+    width: 500px; /* Ширина блока */
+    
+}
+
+div.ulika_txt {
+    padding: 14px 0px;
+#    border: 2px solid #000; /* Параметры рамки */
+    display: inline-block;
+
+}
+
+div.button_info {
+  border: 1px double black; /* Параметры границы */
+  height: 50px;
+}
+
+div.button_info li {
+    display: inline-block; /* Строчно-блочные элементы */
+    background: #CA181A; /* Цвет фона */
+    margin-right: 3px; /* Расстояние между пунктами меню */
+    -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(-30deg); /* Для Firefox */
+    -o-transform: skewX(-30deg); /* Для Opera */
+    -ms-transform: skewX(-30deg); /* Для IE */
+    transform: skewX(-30deg); /* CSS3 */
+}
+
+div.button_info a {
+    color: #fff; /* Цвет ссылок */
+    display: block; /* Блочный элемент */
+    padding: 5px 15px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(30deg); /* Для Firefox */
+    -o-transform: skewX(30deg); /* Для Opera */
+    -ms-transform: skewX(30deg); /* Для IE */
+    transform: skewX(30deg); /* CSS3 */
+}
+
+div.button_info li:hover {
+    background: #333; /* Цвет фона при наведении курсора мыши */
+   }
+
+aside { /* Правая колонка */
+ width: 200px; /* Ширина правой колонки */
+ float: right; /* Обтекание */
+}
+article { /* Левая колонка */
+ margin-right: 240px; /* Отступ справа */
+}
+
+ul.menu {
+ list-style: none; /* Убираем маркеры */
+ margin: 40px  0; /* Отступ сверху и снизу */
+ padding: 0; /* Поля */
+}
+ul.menu li {
+ padding: 5px; /* Поля */ 
+ font-size: 0.8em; /* Размер шрифта */
+ font-weight: bold; /* Жирное начертание */
+}
+ul.menu a, ul.menu span {
+ padding: 5px; /* Поля */
+}
+ul.menu li span {
+ padding-left: 25px; /* Поле слева */
+ background: url(/pics/6-15.png) no-repeat 5px center; /* Маркер */
+}
+ ul.menu li.current { 
+ background: #f9f2e2 url(/pics/6-14.png) repeat-y; /* Градиент */
+}
+
+/*---------------------------*/
+/*--Телефоны-----------------*/
+
+@media screen and (max-width: 720px) {
+div.all {
+  width: 97%;
+#  border: 4px double black; /* Параметры границы */
+  padding: 25px 0px 0px; /* Поля вокруг текста */
+  margin: auto;
+#  text-align: left;
+  font-size: 18px;
+}
+
+
+td {border-bottom: 1px solid #a0a0a0;}
+
+div.ulika_all {
+  width: 100%;
+  background-color: #c0c0c0; /* Цвет фона слоя */
+#  border: 4px double black;
+}
+
+div.ulika_img {
+  width: 200px; /* Ширина блока */
+  height: 276px; /* Высота блока */
+  margin: auto;
+#  border: 4px double black;
+  overflow-y: hidden; /*Отображается только область внутри элемента, остальное будет скрыто.*/
+  padding-top: 0px; /* Поле сверху */
+}
+
+div.ulika_info {
+  padding: 2px;
+  width: 100%; /* Ширина блока */
+
+}
+div.ulika_txt {padding: 14px 0px;}
+
+label {
+  width: 200px;
+  margin: auto;
+}
+
+}
+
+
+/*---------------------------*/
+/*--Статус Бар---------------*/
+
+
+.progress-bar {
+  background-color: #f0f0f0;
+  height: 25px;
+  padding: 5px;
+  width: 95%;
+  margin: 10px 0 20px 0;			
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 5px #909090 inset, 0 1px 0 #909090;
+  -webkit-box-shadow: 0 1px 5px #909090 inset, 0 1px 0 #909090;
+  box-shadow: 0 1px 5px #909090 inset, 0 1px 0 #909090;
+
+}
+
+div.progress-bar p {
+
+  text-align: center;
+  vertical-align: "baseline";
+
+}
+
+.progress-bar span {
+  display: inline-block;
+  height: 100%;
+  background-color: #777;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  -webkit-transition: width .4s ease-in-out;
+  -moz-transition: width .4s ease-in-out;
+  -ms-transition: width .4s ease-in-out;
+  -o-transition: width .4s ease-in-out;
+  transition: width .4s ease-in-out;		
+}
+
+/*---------------------------*/
+
+.orange span {
+	background-color: #fecf23;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fecf23), to(#fd9215));
+	background-image: -webkit-linear-gradient(top, #fecf23, #fd9215);
+	background-image: -moz-linear-gradient(top, #fecf23, #fd9215);
+	background-image: -ms-linear-gradient(top, #fecf23, #fd9215);
+	background-image: -o-linear-gradient(top, #fecf23, #fd9215);
+	background-image: linear-gradient(top, #fecf23, #fd9215);
+	color: #FD7615;
+}
+
+/*---------------------------*/	 
+
+.shine span {
+	position: relative;
+}
+
+.shine span::after {
+	content: '';
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;			
+	
+	-webkit-animation: animate-shine 2s ease-out infinite;
+	-moz-animation: animate-shine 2s ease-out infinite; 			
+}
+
+@-moz-keyframes animate-shine {
+	0% {opacity: 0; width: 0;}
+	50% {opacity: .5;}
+	100% {opacity: 0; width: 95%;}
+}
+
+/*---------------------------*/	
+
+/*--Радио Кнопка-------------*/
+/*---------------------------*/
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  filter: grayscale(100%); 
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #E3C006;
+  filter: grayscale(0%);
+}
+
